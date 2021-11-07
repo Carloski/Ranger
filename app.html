@@ -48,8 +48,48 @@
 
  <!-- ====== MAIN SECTION ====== -->
 <main class="flex-shrink-0">
-<div class="container">
+<div class="container mt-5">
+    <div class="row gx-5">
+        <div class="col col-md-5 border-end border-3">
+            <h2>RANGER: A JavaScript & API Project</h2>
+            <p class="lead">
+                Is a program that prints the numbers from 1 to 100 and 
+                for multiples of ‘3’ it prints "Fizz" instead of the 
+                number and for the multiples of ‘5’ it prints “Buzz”.
+            </p>
 
+            <h2 class="border-bottom border-3">Instructions</h2>
+            <p class="lead">
+                Enter a state Abbreviation with no spaces
+                and press the button. The App will display
+                a list of State parks with their address 
+                and other info. 
+            </p>
+        </div>
+        <div class="col col-md-7">
+            <form id="myForm">
+                <div class="mb-3 label-container">
+                    <label for="state" class="form-label"><h4>Enter a state's abbreviation</h4></label>
+                    <input type="text" class="form-control" id="state" name="state" placeholder="CA, FL, OH, WA, CA">
+                </div>
+                <div class="mb-3 label-container">
+                    <label for="numResults" class="form-label"><h4>How many Parks?</h4></label>
+                    <input type="text" class="form-control" id="numResults" name="numResults" placeholder="10">
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary btn-lg" id="show-btn" type="button">SHOW</button>
+                    <button class="btn btn-danger btn-lg" id="clear-btn" type="button">CLEAR</button>
+                </div>
+            </form>
+
+            <p id="js-error-message" class="error-message"></p>
+            <section id="results" class="hidden">
+                <h2 class="results-header">Search results</h2>
+                <ul class="results-list">
+                </ul>
+            </section>
+        </div>
+    </div>
 </div>
 </main><!-- ====== MAIN END ====== -->
 

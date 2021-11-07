@@ -30,50 +30,53 @@ body {
   color: var(--dark-color);
 }
 
-main .hidden {
-  display: none;
+main {
+  .hidden {
+    display: none;
+  }
+  .container {
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+  }
+
+  .brand {
+    font-size: 1.3rem;
+  }
+
+  .fab {
+    color: var(--light-color);
+  }
+
+  .checklist > li i {
+    color: var(--secondary-color);
+  }
+
+  .fab:hover {
+    opacity: 0.9;
+    color: var(--secondary-color);
+  }
+
+  .bsicon {
+    color: #7911f2;
+  }
+
+  .jsicon {
+    color: #f0db4f;
+  }
+
+  .html5icon {
+    color: #f75421;
+  }
+
+  .cssicon {
+    color: #0168ba;
+  }
 }
 
-main .container {
-  padding: 60px 15px 0;
-  margin-bottom: 5rem;
-}
-
-main .brand {
-  font-size: 1.3rem;
-}
-
-main .fab {
-  color: var(--light-color);
-}
-
-main .checklist > li i {
-  color: var(--secondary-color);
-}
-
-main .fab:hover {
-  opacity: 0.9;
-  color: var(--secondary-color);
-}
-
-main .bsicon {
-  color: #7911f2;
-}
-
-main .jsicon {
-  color: #f0db4f;
-}
-
-main .html5icon {
-  color: #f75421;
-}
-
-main .cssicon {
-  color: #0168ba;
-}
-
-.label-container input {
-  width: 50%;
+.label-container {
+  input {
+    width: 50%;
+  }
 }
 
 footer {
@@ -92,4 +95,3 @@ pre[class*="language-"] {
   word-break: break-all;
   word-wrap: break-word;
 }
-/*# sourceMappingURL=site.css.map */
